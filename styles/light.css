@@ -5,185 +5,43 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
- 
+
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */
-  --accent-color: #FFF1F7;  
-  --text-color: #353430;
-  --accent-text-color: #FF0070;
-  --main-text-color:#FFC2E6;
-  --main-font: 'IBM Plex Mono';
-  --font-bold: 700;
-  --font-regular: 400;
-  --smoll-font-size: 18px;
+  */  
+  --accent-text-color: #FFC2E6;
+  --text-color:#353430;
+  --header-text-color: #353430;
   --cover: url(../images/cover-image-light.png);
   --display: hidden;
-  --border-color: #353430;
-  --menu-color: #353430;
-  --content-header-color:  #353430;
-  --section-title-color:   #353430;
-  --page-titlt-color:#FFC2E6;
-  --shdow-color:  #FF0070;
   --link-decor-color:  #FF8DCB;
-
-}
-
-.page {
-  color: var(--text-color);
-}
-
-.header {
-  background-image: var(--cover);
- }
-
- .header::before {
-  border-color: var(--border-color);  
- }
-
- .header::after {
-   border-color: var(--border-color);   
- }
+  --hover-color: #32312D66;
+  --text-background-color:#FF8DCB;
+  --title-text-color:#353430;
+  ;
   
- .header__theme-menu-item{
-  color: var(--menu-color);
- }
 
- .page__title {
-  color: var(--page-titlt-color);
-  text-shadow: 4px 4px 0 var(--shdow-color);
- }
+}
 
- .menu__decor::after {
-  visibility: var(--display);
- }
-
- .menu__decor {
-  visibility: var(--display);
- }
- 
- .link__decor::after {
-  color: var(--link-decor-color);
- }
-
- .reduced__concentration__header {
-   color: var(--section-title-color);
- }
-
- .difficulty__concentrating__header-block {
-  color: var(--section-title-color);
- }
- 
- .section__title__decor {
-  color: var(--content-header-color);
- }
-
- .how__to__concentrate__header {
-  color: var(--section-title-color);
- }
-
- .footer__title{
-  color: var(--page-titlt-color);
-  text-shadow: 2px 2px 0 var(--shdow-color);
- }
-
- .footer__title::before{
-  border-color: var(--border-color);
- }
-
- .footer__title::after {
-  border-color: var(--border-color);
- }
 
  @media (prefers-color-scheme: light) {
   :root {
         /* Дублируем переменные светлой темы */
-        --accent-color: #FFF1F7;  
-        --text-color: #353430;
-        --accent-text-color: #FF0070;
-        --main-text-color:#FFC2E6;
-        --main-font: 'IBM Plex Mono';
-        --font-bold: 700;
-        --font-regular: 400;
-        --smoll-font-size: 18px;
+       
+        --accent-text-color: #FFC2E6;
+        --text-color:#353430;
+        --header-text-color: #353430;       
         --cover: url(../images/cover-image-light.png);
         --display: hidden;
-        --border-color: #353430;
-        --menu-color: #353430;
-        --content-header-color:  #353430;
-        --section-title-color:   #353430;
-        --page-titlt-color:#FFC2E6;
-        --shdow-color:  #FF0070;
         --link-decor-color:  #FF8DCB;
-          
+        --hover-color: #32312D66;
+        --text-background-color:#FF8DCB;
+        
     }
   }
   
-.page {
-  color: var(--text-color);
-}
 
-.header {
-  background-image: var(--cover);  
- }
-
- .header::before {
-  border-color: var(--border-color);  
- }
-
- .header::after {
-  border-color: var(--border-color);
-} 
- 
- .header__theme-menu-item{
-  color: var(--menu-color);
- }
-
- .page__title {
-  color: var(--page-titlt-color);
-  text-shadow: 4px 4px 0 var(--shdow-color);
- }
-
- .menu__decor::after {
-  visibility: var(--display);
- }
-
- .menu__decor {
-  visibility: var(--display);
- }
-
- .link__decor::after {
-  color: var(--link-decor-color);
- }
-
- .reduced__concentration__header {
-   color: var(--section-title-color);
- }
-
- .difficulty__concentrating__header-block {
-  color: var(--section-title-color);
- }
- 
- .section__title__decor {
-  color: var(--content-header-color);
- }
-
- .how__to__concentrate__header {
-  color: var(--section-title-color);
- }
-
- .footer__title{
-  color: var(--page-titlt-color);
-  text-shadow: 2px 2px 0 var(--shdow-color);
- }
-
- .footer__title::before{
-  border-color: var(--border-color);
- }
-
- .footer__title::after {
-  border-color: var(--border-color);
- }
+  
