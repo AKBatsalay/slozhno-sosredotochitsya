@@ -22,25 +22,24 @@
   --text-background-color:#FF8DCB;
   --title-text-color:#353430;
   --link-style: #ffeef6;
-  ;
   
-
 }
 
 
  @media (prefers-color-scheme: light) {
   :root {
-        /* Дублируем переменные светлой темы */
-       
-        --accent-text-color: #FFC2E6;
-        --text-color:#353430;
-        --header-text-color: #353430;       
-        --cover: url(../images/cover-image-light.png);
-        --display: hidden;
-        --link-decor-color:  #FF8DCB;
-        --hover-color: #32312D66;
-        --text-background-color: #ffeef6;
-        
+  /* Дублируем переменные светлой темы */
+   --accent-text-color: #FFC2E6;
+  --text-color:#353430;
+  --header-text-color: #353430;
+  --cover: url(../images/cover-image-light.png);
+  --display: hidden;
+  --link-decor-color:  #FF8DCB;
+  --hover-color: #32312D66;
+  --text-background-color:#FF8DCB;
+  --title-text-color:#353430;
+  --link-style: #ffeef6;
+          
     }
   }
   
