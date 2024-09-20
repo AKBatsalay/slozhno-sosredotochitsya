@@ -75,7 +75,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
-  font-family: var(--font-regular);
+  font-weight: var(--font-regular);
   color: var(--header-text-color);  
   gap: 10px;
   max-block-size: 20px;
@@ -84,7 +84,7 @@
 .menu__decor {
   visibility: var(--display);
   position: absolute;
-  font-family: var(--font-regular);
+  font-weight: var(--font-regular);
   font-size: var(--smoll-font-size);
   color: var(--header-text-color);
   align-content: center;
@@ -194,7 +194,7 @@ border-bottom: 1px solid var( --text-color);
 }
 
 main h2 {
-  font-size: var(--main-font);
+  font-family: var(--main-font);
   font-size: 18px;
   line-height: 23px;
   color: var(--header-text-color);
@@ -342,11 +342,7 @@ h3, h4 {
     flex-direction: column;
   }
 
- .menu__decor {
-    margin-block-end: 80%;    
-  }
-
- .header__content {
+  .header__content {
     max-inline-size: 364px;
     flex-wrap: wrap;
     max-block-size: 117px;
@@ -357,12 +353,7 @@ h3, h4 {
     font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);   
   }
 
-
-  .main {
-    margin-block-start: 60px;
-  }
-
-  .section-causes h2 {
+    .section-causes h2 {
     max-inline-size: 236px;
   }
   .section-why h2 {
@@ -394,11 +385,7 @@ h3, h4 {
     font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     max-block-size: 668px;
   }
-
-  .page__footer {
-    margin-block-start: 60px;
-  }
-
+ 
 }
 
 @media (max-width: 767px) {
@@ -407,13 +394,6 @@ h3, h4 {
     grid-column-start: 1;
     text-wrap: wrap;
     } 
-
-  .section-advices {
-    margin-block-start: 50px;
-    grid-template-columns: auto;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
-    }
 
   .header__theme-menu {
     margin-block-start: 20%;
@@ -459,13 +439,7 @@ h3, h4 {
     max-inline-size: none;
   }
 
-  .section-why article {
-    grid-column-start: 1;
-    text-wrap: wrap;
-  }
-  
   .stylish__link {
-    text-decoration: none;
     text-underline-offset: 5px;
     border-bottom: solid 1px var(--link-style);
   }
@@ -477,10 +451,6 @@ h3, h4 {
   }
 
   .section-causes h2 {
-    max-inline-size: none;
-  }
-
-  .section-causes__list .text-block {
     max-inline-size: none;
   }
  
