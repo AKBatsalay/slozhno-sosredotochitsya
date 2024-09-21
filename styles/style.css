@@ -156,13 +156,28 @@ button:focus-visible {
 .main {
   margin-block-start: 60px;
   line-height: 23.4px;
+  font-size: var(--smoll-font-size);
+  font-family: var(--main-font);
+ }
+
+ main h2 {
+  color: var(--header-text-color);
+  font-size: var(--smoll-font-size);
+}
+
+h3, h4, .section-gallery h2{ 
+  background-color: var(--text-background-color);
+  color: var(--title-text-color);
+  font-size: var(--smoll-font-size);  
+}
+
+ .content-section {
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
  }
 
 .content__paragraph {
   margin-block-start: 10px;
-  font-family: var(--main-font);
-  font-size: var(--smoll-font-size);
-  font-weight: var(--font-regular);
   color: var(--text-color);
 }
 
@@ -173,18 +188,16 @@ button:focus-visible {
 }
 
 .stylish__link:hover {
-border-bottom: 1px solid var( --text-color);
+ border-bottom: 1px solid var(--text-color);
 }
 
 .stylish__link:focus-visible {
-  outline: 1px solid var( --text-color);
+  outline: 1px solid var(--text-color);
 }
 
 .section-why {
   display: grid;
   grid-template-columns: 1fr 1.94fr;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
   row-gap: 20px;  
 }
 
@@ -193,32 +206,15 @@ border-bottom: 1px solid var( --text-color);
   grid-column-end: 3;
 }
 
-main h2 {
-  font-family: var(--main-font);
-  font-size: 18px;
-  line-height: 23px;
-  color: var(--header-text-color);
-}
-
-h3, h4 { 
-  background-color: var(--text-background-color);
-  color: var(--title-text-color);
-  font-size: 18px;
-}
-
 .section-causes {
   margin-block-start: 80px;  
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;  
   flex-grow: 1;
-  padding: 0;
- }
+}
 
 .section-causes__list {
   display: flex;
   gap: 19px;
   margin-block-start: 20px;
-  padding: 0;
   flex-wrap: wrap;
 }
   
@@ -226,8 +222,7 @@ h3, h4 {
   flex-basis: 315px;
   flex-grow: 1;
   max-inline-size: 315px;
-  padding-inline-start: 0;
- }
+}
  
 .section-causes h2 {
   max-inline-size: 315px;
@@ -237,8 +232,6 @@ h3, h4 {
   margin-block-start: 80px;
   display: grid;
   grid-template-columns: 1fr 2.05fr;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
   gap: 20px;  
 }
 
@@ -248,10 +241,6 @@ h3, h4 {
   gap: 20px;
 }
 
-.section-advices h4 {
-  font-weight: var(--font-regular);
-}
-
 .section-advices .text-block, h3 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -259,17 +248,15 @@ h3, h4 {
 
 .section-advices h3 {
   grid-row-start: 1;
-}
- 
-.section-gallery {
-  margin-block-start: 80px;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
+  font-weight: var(--font-bold);
 }
 
-.section-gallery h2 {
-  background-color: var(--text-background-color);
-  color: var(--title-text-color);
+.section-advices h4 {
+  font-weight: var(--font-regular);
+}
+
+.section-gallery {
+  margin-block-start: 80px;
 }
 
 .gallery__img {
@@ -285,10 +272,6 @@ h3, h4 {
   margin-block-start: 20px;  
   grid-template-columns: repeat(3, 1fr);
   line-height: 0;
-}
-
-.gallery__item {
-  margin: 0;
 }
 
 .gallery__item--1 {
@@ -334,8 +317,7 @@ h3, h4 {
     flex-wrap: wrap; 
     justify-self: end;
     margin-block-start: 25%;
-    margin-inline-end: 3%;
-    
+    margin-inline-end: 3%;    
   }
 
  .header__theme-menu-list {
@@ -353,9 +335,10 @@ h3, h4 {
     font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);   
   }
 
-    .section-causes h2 {
+  .section-causes h2 {
     max-inline-size: 236px;
   }
+
   .section-why h2 {
     max-inline-size: 236px;
   }
@@ -393,7 +376,7 @@ h3, h4 {
   .section-why article {
     grid-column-start: 1;
     text-wrap: wrap;
-    } 
+  } 
 
   .header__theme-menu {
     margin-block-start: 20%;
@@ -408,7 +391,7 @@ h3, h4 {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px; 
     margin-inline-start: 2%;
-    }     
+  }     
    
   .header__content {
     max-inline-size: 355px;
@@ -429,10 +412,13 @@ h3, h4 {
     margin-block-start: 40px;
   }
 
-  .section-why  {
-    grid-template-columns: 1fr;
+  .content-section {
     margin-inline-start: 10px;
     margin-inline-end: 10px;
+  }
+
+  .section-why  {
+    grid-template-columns: 1fr;    
   }
 
   .section-why h2 {
@@ -445,9 +431,7 @@ h3, h4 {
   }
 
   .section-causes{
-    margin-block-start: 51px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    margin-block-start: 51px;    
   }
 
   .section-causes h2 {
@@ -456,15 +440,11 @@ h3, h4 {
  
   .section-advices {
     margin-block-start: 52px;
-    grid-template-columns: auto;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    grid-template-columns: auto;    
   }
 
   .section-gallery  {
-    margin-block-start: 50px;
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    margin-block-start: 50px;    
   }
 
   .gallery__containtr {
@@ -481,6 +461,5 @@ h3, h4 {
   .footer__title {
     font-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-block-start: unset;
-  }
- 
+  } 
 }
